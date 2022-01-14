@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="omnicellscheduler.OmniTableController">
+   <children>
+      <TableView fx:id="scheduleTable" layoutX="9.0" layoutY="100.0" prefHeight="458.0" prefWidth="920.0">
+        <columns>
+          <TableColumn prefWidth="170.0" text="Monday">
+               <columns>
+                <TableColumn fx:id="drugMonday" prefWidth="130.0" text="Drug"  />
+                  <TableColumn fx:id="numMonday" prefWidth="100.0" text="Number"  />
+               </columns>
+            </TableColumn>
+            <TableColumn prefWidth="130.0" text="Tuesday">
+               <columns>
+                  <TableColumn fx:id="drugTuesday" prefWidth="130.0" text="Drug" />
+                  <TableColumn fx:id="numTuesday" prefWidth="100.0" text="Number" />
+               </columns>
+            </TableColumn>
+            <TableColumn prefWidth="75.0" text="Thursday">
+               <columns>
+                  <TableColumn fx:id="drugThursday" prefWidth="130.0" text="Drug" />
+                  <TableColumn fx:id="numThursday" prefWidth="100.0" text="Number" />
+               </columns>
+            </TableColumn>
+            <TableColumn prefWidth="217.0" text="Friday">
+               <columns>
+                  <TableColumn fx:id="drugFriday" prefWidth="130.0" text="Drug" />
+                  <TableColumn fx:id="numFriday" prefWidth="100.0" text="Number" />
+               </columns>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <Label layoutX="44.0" layoutY="43.0" />
+   </children>
+</Pane>

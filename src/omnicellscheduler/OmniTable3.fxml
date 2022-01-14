@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="843.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="omnicellscheduler.OmniTable3Controller">
+   <children>
+      <TableView fx:id="mondayTable" layoutX="24.0" layoutY="100.0" prefHeight="379.0" prefWidth="200.0">
+        <columns>
+            <TableColumn prefWidth="207.0" text="Monday">
+               <columns>
+                <TableColumn fx:id="drugMonday" prefWidth="101.0" text="Drug" />
+                <TableColumn fx:id="numMonday" prefWidth="106.0" text="Number" />
+               </columns>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <TableView fx:id="tuesdayTable" layoutX="220.0" layoutY="100.0" prefHeight="379.0" prefWidth="200.0">
+        <columns>
+            <TableColumn prefWidth="199.0" text="Tuesday">
+               <columns>
+                <TableColumn fx:id="drugTuesday" prefWidth="99.0" text="Drug" />
+                <TableColumn fx:id="numTuesday" prefWidth="100.0" text="Number" />
+               </columns>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <TableView fx:id="thursdayTable" layoutX="417.0" layoutY="100.0" prefHeight="379.0" prefWidth="200.0">
+        <columns>
+            <TableColumn prefWidth="199.0" text="Thursday">
+               <columns>
+                <TableColumn fx:id="drugThursday" prefWidth="101.0" text="Drug" />
+                <TableColumn fx:id="numThursday" prefWidth="98.0" text="Number" />
+               </columns>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <TableView fx:id="fridayTable" layoutX="617.0" layoutY="100.0" prefHeight="379.0" prefWidth="200.0">
+        <columns>
+            <TableColumn prefWidth="199.0" text="Friday">
+               <columns>
+                <TableColumn fx:id="drugFriday" prefWidth="103.0" text="Drug" />
+                <TableColumn fx:id="numFriday" prefWidth="96.0" text="Number" />
+               </columns>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <Label layoutX="287.0" layoutY="25.0" text="Omnicell Schedule">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="export" layoutX="366.0" layoutY="497.0" mnemonicParsing="false" text="Export To Excel" />
+   </children>
+</Pane>

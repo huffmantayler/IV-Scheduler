@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="omnicellscheduler.OmnicellSchedulerController">
+   <children>
+      <VBox layoutX="80.0" layoutY="120.0" prefHeight="200.0" prefWidth="119.0" spacing="20.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="138.0" text="Azithromycin" />
+            <Label prefHeight="17.0" prefWidth="138.0" text="Cefazolin" />
+            <Label prefHeight="17.0" prefWidth="138.0" text="Clindamycin 600mg" />
+            <Label prefHeight="17.0" prefWidth="138.0" text="Clindamycin 900mg" />
+            <Label prefHeight="17.0" prefWidth="138.0" text="Insulin" />
+            <Label prefHeight="17.0" prefWidth="138.0" text="Vancomycin 750mg" />
+            <Label prefHeight="17.0" prefWidth="138.0" text="Vancomycin 1gm" />
+            <Label prefHeight="17.0" prefWidth="138.0" text="Vancomycin 1250mg" />
+            <Label prefHeight="17.0" prefWidth="138.0" text="Vancomycin 1500mg" />
+            <Label prefHeight="17.0" prefWidth="138.0" text="Vancomycin 2gm" />
+         </children>
+      </VBox>
+      <VBox layoutX="201.0" layoutY="115.0" prefHeight="360.0" prefWidth="50.0" spacing="10.0">
+         <children>
+            <TextField id="azith" fx:id="azith" />
+            <TextField id="cefaz" fx:id="cefaz" />
+            <TextField id="clin6" fx:id="clin6" />
+            <TextField id="clin9" fx:id="clin9" />
+            <TextField id="insulin" fx:id="insulin" />
+            <TextField id="v750"  fx:id="v750" />
+            <TextField id="v1gm" fx:id="v1gm" />
+            <TextField id="v1250" fx:id="v1250" />
+            <TextField id="v1500" fx:id="v1500" />
+            <TextField id="v2gm" fx:id="v2gm" />
+         </children>
+      </VBox>
+      <Button fx:id="submit" layoutX="111.0" layoutY="505.0" mnemonicParsing="false" onAction="#getData" text="Submit" />
+      <Button fx:id="clear" layoutX="196.0" layoutY="505.0" mnemonicParsing="false" text="Clear" />
+      <Label layoutX="79.0" layoutY="82.0" text="Enter Daily Average Usage:" />
+      <ImageView fitHeight="105.0" fitWidth="200.0" layoutX="340.0" layoutY="67.0">
+         <image>
+            <Image url="@OmniLogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="279.0" fitWidth="128.0" layoutX="376.0" layoutY="187.0">
+         <image>
+            <Image url="@Device.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="73.0" layoutY="37.0" text="Omnicell Weekly Scheduler">
+         <font>
+            <Font name="Helvetica Neue Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
